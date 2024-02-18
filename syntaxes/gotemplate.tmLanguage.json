@@ -7,12 +7,6 @@
 		},
 		{
 			"include": "text.html.basic"
-		},
-		{
-			"include": "source.css"
-		},
-		{
-			"include": "source.js"
 		}
 	],
 	"repository": {
