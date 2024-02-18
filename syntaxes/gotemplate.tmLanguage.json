@@ -28,6 +28,10 @@
 			  "contentName": "source.go.embedded",
 			  "patterns": [
 				{
+				  "match": "\\bend\\b",
+				  "name": "keyword.control.end.go-template"
+				},
+				{
 				  "include": "source.go"
 				}
 			  ]
