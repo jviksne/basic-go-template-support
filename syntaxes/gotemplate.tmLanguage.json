@@ -32,6 +32,10 @@
 				  "name": "keyword.control.end.go-template"
 				},
 				{
+				  "match": "\\bnot\\b",
+				  "name": "keyword.operator.not.go-template"
+				},
+				{
 				  "include": "source.go"
 				}
 			  ]
