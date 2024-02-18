@@ -1,0 +1,45 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Go template",
+	"patterns": [
+		{
+			"include": "#goTemplateTag"
+		},
+		{
+			"include": "text.html.basic"
+		},
+		{
+			"include": "source.css"
+		},
+		{
+			"include": "source.js"
+		}
+	],
+	"repository": {
+		"goTemplateTag": {
+		  "patterns": [
+			{
+			  "begin": "\\{\\{",
+			  "beginCaptures": {
+				"0": {
+				  "name": "punctuation.section.embedded.begin.go"
+				}
+			  },
+			  "end": "\\}\\}",
+			  "endCaptures": {
+				"0": {
+				  "name": "punctuation.section.embedded.end.go"
+				}
+			  },
+			  "contentName": "source.go.embedded",
+			  "patterns": [
+				{
+				  "include": "source.go"
+				}
+			  ]
+			}
+		  ]
+		}
+	},
+	"scopeName": "text.html.go-template"
+}

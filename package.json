@@ -1,0 +1,25 @@
+{
+  "name": "basic-go-template-support",
+  "displayName": "Basic Go Template Support",
+  "description": "Basic Go text template syntax highighting support applied to *.tmpl files.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "gotemplate",
+      "aliases": ["Go template", "gotemplate"],
+      "extensions": [".tmpl",".gtmpl",".gtpl",".go.txt",".go.tpl",".go.tmpl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "gotemplate",
+      "scopeName": "text.html.go-template",
+      "path": "./syntaxes/gotemplate.tmLanguage.json"
+    }]
+  }
+}
