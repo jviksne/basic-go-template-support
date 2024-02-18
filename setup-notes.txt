@@ -3,24 +3,24 @@ Install NodeJS and VS Code
 Install Yeoman and VS Code Extension Generator
 	npm install -g yo generator-code
 
-	Scaffold extenison
+	Scaffold extenison:
 	cd to destination
 	yo code
-	? What type of extension do you want to create? New Language Support
-	Enter the URL (http, https) or the file path of the tmLanguage grammar or press ENTER to start with a new grammar.
-	? URL or file to import, or none for new:
-	? What's the name of your extension? Basic Go Template Support
-	? What's the identifier of your extension? basic-go-template-support
-	? What's the description of your extension? Basic Go text template syntax highighting support applied to *.tmpl files.
-	Enter the id of the language. The id is an identifier and is single, lower-case name such as 'php', 'javascript'
-	? Language id: gotemplate
-	Enter the name of the language. The name will be shown in the VS Code editor mode selector.
-	? Language name: Go template
-	Enter the file extensions of the language. Use commas to separate multiple entries (e.g. .ruby, .rb)
-	? File extensions: .tmpl,.gtmpl,.gtpl,.go.txt,.go.tpl,.go.tmpl
-	Enter the root scope name of the grammar (e.g. source.ruby)
-	? Scope names: text.html.go-template
-	? Initialize a git repository? Yes	
+		? What type of extension do you want to create? New Language Support
+		Enter the URL (http, https) or the file path of the tmLanguage grammar or press ENTER to start with a new grammar.
+		? URL or file to import, or none for new:
+		? What's the name of your extension? Basic Go Template Support
+		? What's the identifier of your extension? basic-go-template-support
+		? What's the description of your extension? Basic Go text template syntax highighting support applied to *.tmpl files.
+		Enter the id of the language. The id is an identifier and is single, lower-case name such as 'php', 'javascript'
+		? Language id: gotemplate
+		Enter the name of the language. The name will be shown in the VS Code editor mode selector.
+		? Language name: Go template
+		Enter the file extensions of the language. Use commas to separate multiple entries (e.g. .ruby, .rb)
+		? File extensions: .tmpl,.gtmpl,.gtpl,.go.txt,.go.tpl,.go.tmpl
+		Enter the root scope name of the grammar (e.g. source.ruby)
+		? Scope names: text.html.go-template
+		? Initialize a git repository? Yes	
 
 Edit syntaxes\gotemplate.tmLanguage.json
 
@@ -28,3 +28,6 @@ To install in VSC:
 	npm install -g vsce
 	cd to the base dir
 	vsce package
+	Install the generated .vsix file in Visual Studio Code:
+		Ctrl+Shift+X
+		Install from VSIX...

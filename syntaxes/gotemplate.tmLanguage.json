@@ -37,6 +37,17 @@
 				  "include": "source.go"
 				}
 			  ]
+			},
+			{
+				"begin": "\\`\\`\\`",
+				"end": "\\`\\`\\`",
+				"name": "no.highlight",
+				"patterns": [
+					{
+						"match": ".*",
+						"name": "no.highlight.inner"
+					}
+				]
 			}
 		  ]
 		}
